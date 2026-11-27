@@ -13,6 +13,9 @@ header{width:100%;max-width:1100px;display:flex;justify-content:space-between;al
 .wsk{height:clamp(70px,12vw,120px);width:auto}
 .cs{width:clamp(48px,7vw,72px);height:auto}
 main{display:flex;flex-direction:column;align-items:center;gap:clamp(20px,4vh,40px);width:100%}
+.title{text-align:center}
+.title h1{font-size:clamp(26px,5vw,56px);font-weight:700;letter-spacing:.01em;line-height:1.15}
+.title p{font-size:clamp(15px,2.2vw,26px);color:var(--accent);margin-top:6px}
 #time{font-family:"Bahnschrift","DIN Alternate","Segoe UI",Roboto,sans-serif;font-weight:600;font-variant-numeric:tabular-nums;font-size:clamp(72px,22vw,340px);line-height:1;letter-spacing:.02em;text-align:center;transition:color .3s}
 #time.done{color:var(--done);animation:blink .8s steps(2) infinite}
 @keyframes blink{50%{opacity:.25}}
@@ -51,6 +54,10 @@ dialog h2{font-size:20px;font-weight:600;margin-bottom:16px}
 </header>
 
 <main>
+  <div class="title">
+    <h1>Бизнестегі IT-шешімдер</h1>
+    <p>Software applications development</p>
+  </div>
   <div id="time" aria-live="off">15:00</div>
   <div class="row" id="presets">
     <button data-s="900" class="on">15 мин</button>
